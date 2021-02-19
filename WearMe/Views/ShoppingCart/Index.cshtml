@@ -1,0 +1,51 @@
+﻿@model ShoppingCartViewModel
+
+<div class=container checkoutForm">
+    <h2>Your shopping cart @ViewBag.session</h2>
+    <h4>Here are the Cloths in your shopping cart.</h4>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Selected amount</th>
+                <th>Drink</th>
+                <th class="text-right">Price</th>
+                <th class="text-right">Subtotal</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var line in Model.ShoppingCart.ShoppingCartItems)
+            {
+                <tr>
+                    <td class="text-center">@line.Amount</td>
+                    <td class="text-left">@line.Cloth.Name</td>
+                    <td class="text-right">@line.Cloth.Price.ToString("c")</td>
+                    <td class="text-right">
+                        @((line.Amount * line.Cloth.Price).ToString("c"))
+                    </td>
+                    <td class="text-center"><a class="fa fa-remove text-danger remove" asp-controller="ShoppingCart" asp-action="RemoveFromShoppingCart" asp-route-clothId="@line.Cloth.ClothId"></a></td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" class="text-right">Total:</td>
+                <td class="text-right">
+                    @Model.ShoppingCartTotal.ToString("c")
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <div>
+        <p class="btn pull-right">
+            
+            <a class="btn btn-info" id="customButton" asp-controller="Order" asp-action="CheckOut">Check out</a>
+        </p>
+        <div class="row">
+            @*<a class="btn btn-link" href='javascript:history.go(-1)'>Back</a>*@
+            <a class="btn btn-link" asp-controller="Cloth" asp-action="List">Show all cloths</a>
+
+        </div>
+    </div>
+</div>

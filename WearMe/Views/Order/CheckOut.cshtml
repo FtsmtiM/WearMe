@@ -1,0 +1,141 @@
+﻿@model Order
+
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-7">
+                <div>
+                    <h5 class="text-center">Please enter your delivery details</h5>
+                </div>
+                <div class="orderForm">
+                    <form asp-action="Checkout" method="post" class="mt-4" role="form">
+                        <div class="form-group row">
+                            <div class="col-md-3 control-label">
+                                <label asp-for="LastName"></label>
+                                <span>*</span>
+                            </div>
+                            <div class="col-md-5">
+                                <input asp-for="LastName" class="form-control" />
+                                <span asp-validation-for="LastName" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-3 control-label">
+                                <label asp-for="FirstName"></label>
+                                <span>*</span>
+                            </div>
+                            <div class="col-md-5">
+                                <input asp-for="FirstName" class="form-control" />
+                                <span asp-validation-for="FirstName" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-3 control-label">
+                                <label asp-for="AddressLine1"></label>
+                                <span>*</span>
+                            </div>
+                            <div class="col-md-5">
+                                <input asp-for="AddressLine1" class="form-control" />
+                                <span asp-validation-for="AddressLine1" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label asp-for="AddressLine2" class="col-md-3 control-label"></label>
+                            <div class="col-md-5">
+                                <input asp-for="AddressLine2" class="form-control" />
+                                <span asp-validation-for="AddressLine2" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-3 control-label">
+                                <label asp-for="ZipCode"></label>
+                                <span>*</span>
+                            </div>
+                            <div class="col-md-5">
+                                <input asp-for="ZipCode" class="form-control" />
+                                <span asp-validation-for="ZipCode" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-3 control-label">
+                                <label asp-for="City"></label>
+                                <span>*</span>
+                            </div>
+                            <div class="col-md-5">
+                                <input asp-for="City" class="form-control" />
+                                <span asp-validation-for="City" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label asp-for="State" class="col-md-3 control-label"></label>
+                            <div class="col-md-5">
+                                <input asp-for="State" class="form-control" />
+                                <span asp-validation-for="State" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-3 control-label">
+                                <label asp-for="Country"></label>
+                                <span>*</span>
+                            </div>
+                            <div class="col-md-5">
+                                <input asp-for="Country" class="form-control" />
+                                <span asp-validation-for="Country" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label asp-for="PhoneNumber" class="col-md-3 control-label"></label>
+                            <div class="col-md-5">
+                                <input asp-for="PhoneNumber" class="form-control" />
+                                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-md-3 control-label">
+                                <label asp-for="Email"></label>
+                                <span>*</span>
+                            </div>
+                            <div class="col-md-5">
+                                <input asp-for="Email" class="form-control" />
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group row text-right">
+                            <div class="btn-group ">
+                                <a class="btn btn-default" id="customButton" asp-controller="Cloth" asp-action="List">Add More Items</a>
+                                <input class="btn btn-default" id="customButton" type="submit" value="Complete order" />
+                            </div>
+                            <div>
+                                @*<button class="btn btn-sm btn-light " type="button">Cancel Order</button>*@
+                                @*<input class="btn btn-light" type="submit" value="Cancel " />*@
+                                <a class="btn btn-light" asp-controller="ShoppingCart" asp-action="AddToShoppingCart"
+                                   onclick="return confirm('Are you sure you want to cancel the order? ')">Cancel Order</a>
+
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-5">
+                
+                @await Component.InvokeAsync("ShoppingCartMenu", new { viewname = "ShoppingCartSummary" })
+                @*<div class="form-group">
+                    <div class="btn-group ">
+                        <input class="btn btn-default" id="customButton" type="submit" value="Return " />
+                        <input class="btn btn-info" type="submit" value="Cancel " />
+
+                    </div>
+                </div>*@
+            </div>
+        </div>
+    </div>

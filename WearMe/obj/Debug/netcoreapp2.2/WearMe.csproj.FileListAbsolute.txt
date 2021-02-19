@@ -1,0 +1,119 @@
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\bin\Debug\netcoreapp2.2\WearMe.deps.json
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\bin\Debug\netcoreapp2.2\WearMe.runtimeconfig.json
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\bin\Debug\netcoreapp2.2\WearMe.runtimeconfig.dev.json
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\bin\Debug\netcoreapp2.2\WearMe.dll
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\bin\Debug\netcoreapp2.2\WearMe.pdb
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\bin\Debug\netcoreapp2.2\WearMe.Views.dll
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\bin\Debug\netcoreapp2.2\WearMe.Views.pdb
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\WearMe.RazorAssemblyInfo.cache
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\WearMe.RazorAssemblyInfo.cs
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\WearMe.AssemblyInfoInputs.cache
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\WearMe.AssemblyInfo.cs
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\WearMe.TagHelpers.input.cache
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\WearMe.TagHelpers.output.cache
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\WearMe.RazorCoreGenerate.cache
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\WearMe.RazorTargetAssemblyInfo.cache
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\WearMe.RazorTargetAssemblyInfo.cs
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\WearMe.Views.pdb
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\WearMe.dll
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\WearMe.pdb
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\WearMe.csproj.CopyComplete
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Account\AccessDenied.cshtml.g.cs
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Account\LoggedIn.cshtml.g.cs
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Account\LogIn.cshtml.g.cs
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Account\LogOut.cshtml.g.cs
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Administration\CreateRole.cshtml.g.cs
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Administration\EditRole.cshtml.g.cs
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Administration\EditUsersInRole.cshtml.g.cs
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Administration\ListRoles.cshtml.g.cs
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Cloth\Details.cshtml.g.cs
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Cloth\List.cshtml.g.cs
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index1.cshtml.g.cs
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Order\CheckOut.cshtml.g.cs
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Order\CheckOutEdit.cshtml.g.cs
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Order\OrderCompleted.cshtml.g.cs
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Order\OrderProcessed.cshtml.g.cs
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Shared\CarouselHome.cshtml.g.cs
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Shared\ClothsSummary.cshtml.g.cs
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\CategoryMenu\Default.cshtml.g.cs
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\SexMenu\Default.cshtml.g.cs
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\ShoppingCartMenu\Default.cshtml.g.cs
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\ShoppingCartMenu\ShoppingCartSummary.cshtml.g.cs
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Shared\LogInPartial.cshtml.g.cs
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout2.cshtml.g.cs
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\ShoppingCart\Index.cshtml.g.cs
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\WearMe.csprojAssemblyReference.cache
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout - Copy.cshtml.g.cs
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\WearMe.genruntimeconfig.cache
+C:\Users\Surface Pro 4\source\repos\WearMe\WearMe\obj\Debug\netcoreapp2.2\WearMe.csproj.CoreCompileInputs.cache
+C:\Projects\WearMe\WearMe\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Projects\WearMe\WearMe\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Projects\WearMe\WearMe\bin\Debug\netcoreapp2.2\WearMe.deps.json
+C:\Projects\WearMe\WearMe\bin\Debug\netcoreapp2.2\WearMe.runtimeconfig.json
+C:\Projects\WearMe\WearMe\bin\Debug\netcoreapp2.2\WearMe.runtimeconfig.dev.json
+C:\Projects\WearMe\WearMe\bin\Debug\netcoreapp2.2\WearMe.dll
+C:\Projects\WearMe\WearMe\bin\Debug\netcoreapp2.2\WearMe.pdb
+C:\Projects\WearMe\WearMe\bin\Debug\netcoreapp2.2\WearMe.Views.dll
+C:\Projects\WearMe\WearMe\bin\Debug\netcoreapp2.2\WearMe.Views.pdb
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\WearMe.csprojAssemblyReference.cache
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\WearMe.RazorAssemblyInfo.cache
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\WearMe.RazorAssemblyInfo.cs
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\WearMe.AssemblyInfoInputs.cache
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\WearMe.AssemblyInfo.cs
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\WearMe.TagHelpers.input.cache
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\WearMe.TagHelpers.output.cache
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\WearMe.RazorCoreGenerate.cache
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Account\AccessDenied.cshtml.g.cs
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Account\LoggedIn.cshtml.g.cs
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Account\LogIn.cshtml.g.cs
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Account\LogOut.cshtml.g.cs
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Account\Register.cshtml.g.cs
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Administration\CreateRole.cshtml.g.cs
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Administration\EditRole.cshtml.g.cs
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Administration\EditUsersInRole.cshtml.g.cs
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Administration\ListRoles.cshtml.g.cs
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Cloth\Details.cshtml.g.cs
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Cloth\List.cshtml.g.cs
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.cshtml.g.cs
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index1.cshtml.g.cs
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Order\CheckOut.cshtml.g.cs
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Order\CheckOutEdit.cshtml.g.cs
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Order\OrderCompleted.cshtml.g.cs
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Order\OrderProcessed.cshtml.g.cs
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Shared\CarouselHome.cshtml.g.cs
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Shared\ClothsSummary.cshtml.g.cs
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\CategoryMenu\Default.cshtml.g.cs
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\SexMenu\Default.cshtml.g.cs
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\ShoppingCartMenu\Default.cshtml.g.cs
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\ShoppingCartMenu\ShoppingCartSummary.cshtml.g.cs
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Shared\LogInPartial.cshtml.g.cs
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout - Copy.cshtml.g.cs
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout2.cshtml.g.cs
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\ShoppingCart\Index.cshtml.g.cs
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\WearMe.RazorTargetAssemblyInfo.cache
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\WearMe.RazorTargetAssemblyInfo.cs
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\WearMe.Views.pdb
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\WearMe.dll
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\WearMe.pdb
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\WearMe.genruntimeconfig.cache
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\WearMe.csproj.CopyComplete
+C:\Projects\WearMe\WearMe\obj\Debug\netcoreapp2.2\WearMe.csproj.CoreCompileInputs.cache

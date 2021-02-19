@@ -1,0 +1,32 @@
+﻿@model HomeViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@await Html.PartialAsync("CarouselHome", Model.Trending)
+<div class="row justify-content-center"><h4>Trending Cloths of this Week</h4></div>
+
+<div class="row justify-content-center">
+
+    @foreach (Cloth cloth in Model.Trending)
+    {
+        @await Html.PartialAsync("ClothsSummary", cloth);
+
+        @*var photo = "~/images/" + (cloth.ImageUrl ?? "Elves_Purple.jpg");
+
+            <div class="card m-4" style="width:300px">
+
+
+                <img class="card-img-top cus imageThumbnail" src="@photo" asp-append-version="true" />
+                @*<div class="card-footer col-form-label-sm " >*@
+        @*<div class="card-footer">
+                    <small class="text-muted font-weight-normal">
+                        @cloth.Name</small><br />
+                    <small class="font-weight-bold text-left" >@cloth.Price.ToString("c")</small>
+
+                </div>
+
+            </div>*@
+
+    }
+</div>

@@ -1,0 +1,35 @@
+﻿@model ShoppingCartViewModel
+
+@*<div class=container checkoutForm">*@
+    <table class="table">
+        <tbody>
+            @foreach (var line in Model.ShoppingCart.ShoppingCartItems)
+            {
+                <tr>
+                    <td class="text-left">@line.Cloth.Name</td>
+                    <td class="text-right">
+                        @(line.Amount) x @(line.Cloth.Price)
+
+                        @*@((line.Amount * line.Cloth.Price).ToString("c"))*@
+                    </td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <td class="text-left">Total:</td>
+
+                <td class="text-right">
+                    @Model.ShoppingCartTotal.ToString("c")
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <div>
+        <p class="btn pull-right">
+
+            <a class="btn btn-info" id="customButton" asp-controller="ShoppingCart" asp-action="Index">See Shopping Basket</a>
+        </p>
+    </div>
+</div>

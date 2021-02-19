@@ -1,0 +1,42 @@
+﻿@model ClothDetailsViewModel
+@{
+    ViewBag.Title = "Cloth Details";
+    var photo = "~/images/" + (@Model.Cloth.ImageUrl ?? "Navy.jpg");
+}
+
+<div class="container marginTop">
+    <div class="row card-row">
+        <div class="card-col ol-sm-6 col-md-4">
+            <div class="card-img-container">
+                @*<img class="img-fluid rounded" src="https://placeimg.com/300/300/tech" alt="" />*@
+                <img src="@photo" class="img-fluid rounded" alt="" asp-append-version="true">
+
+            </div>
+
+            @*<div class="text-center view overlay hm-white-slight">
+                <img src="@photo" class="img-fluid" alt="" asp-append-version="true">
+                <a href="#">
+                    <div class="mask waves-effect waves-light"></div>
+                </a>
+            </div>*@
+        </div>
+        <div class="card-col">
+            <div class="card-block">
+                <!--Title-->
+                <h4 class="card-title">@Model.Cloth.Name</h4>
+                <!--Text-->
+                <p class="card-text">@Model.Cloth.Description.</p>
+                @*<p>@ViewBag.session</p>*@
+                <p class="btn pull-right">
+                    
+                    <a class="btn btn-success" id="customButton" asp-controller="ShoppingCart" asp-action="AddToShoppingCart" asp-route-id="@Model.Cloth.ClothId">
+                        Add @Model.Cloth.Name to cart
+                    </a>
+                </p>
+                <p  class="btn pull-right">
+                    <a class="btn btn-link"  asp-controller="Cloth" asp-action="List">See All Cloths</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

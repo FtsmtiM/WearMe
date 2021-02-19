@@ -1,0 +1,97 @@
+﻿@model Order
+<div>@Model.OrderId</div>
+<div class="card mb-3">
+    <div class="card-body" style="padding-bottom:0rem !important">
+        <h5>Order Summary</h5>
+        <table class="table">
+            <tbody>
+                @foreach (var line in Model.OrderLines)
+                {
+                    <tr>
+                        <td class="text-left">@line.Cloth.Name</td>
+                        <td class="text-right">
+                            @(line.Amount) x @(line.Price)
+
+                            @*@((line.Amount * line.Cloth.Price).ToString("c"))*@
+                        </td>
+                    </tr>
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td class="text-left">Total:</td>
+
+                    <td class="text-right">
+                        @Model.OrderTotal.ToString("c")
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+</div>
+<div class="card mb-5">
+
+    <div class="card-body">
+        <h5 class="card-title">Shipping details</h5><hr />
+        <h6 class="card-subtitle mb-2">@Model.FirstName&nbsp;@Model.LastName</h6>
+        <h6 class="card-subtitle mb-2">@Model.AddressLine1</h6>
+        <h6 class="card-subtitle mb-2">@Model.ZipCode&nbsp;@Model.City</h6>
+
+    </div>
+    <div class="card-footer">
+        <a class="btn btn-primary"
+           asp-controller="Order" asp-action="CheckOutEdit" asp-route-id="@Model.OrderId">Edit</a>
+       
+    </div>
+</div>
+
+<div>
+    <h5>Thankyou , please finalise your order using the secure paypal method. </h5>
+</div>
+
+<div id="paypal-button"></div>
+<div class="float-md-right">
+    <a class="btn btn-light"
+       asp-controller="Order" asp-action="RemoveOrder" asp-route-id="@Model.OrderId"
+       onclick="return confirm('Are you sure you want to cancel the order? ')">Cancel</a>
+
+</div>
+
+<script src="https://www.paypalobjects.com/api/checkout.js"></script>
+<script>
+paypal.Button.render({
+// Configure environment
+env: 'sandbox',
+client: {
+sandbox: 'demo_sandbox_client_id',
+production: 'demo_production_client_id'
+},
+// Customize button (optional)
+locale: 'en_US',
+style: {
+size: 'small',
+color: 'gold',
+shape: 'pill',
+},
+// Set up a payment
+payment: function (data, actions) {
+return actions.payment.create({
+transactions: [{
+amount: {
+total: '0.01',
+currency: 'USD'
+}
+}]
+});
+},
+// Execute the payment
+onAuthorize: function (data, actions) {
+return actions.payment.execute()
+.then(function () {
+// Show a confirmation message to the buyer
+window.alert('Thank you for your purchase!');
+});
+}
+}, '#paypal-button');
+</script>

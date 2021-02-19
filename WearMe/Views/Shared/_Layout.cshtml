@@ -1,0 +1,143 @@
+﻿@inject SignInManager<IdentityUser> signInManager
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <met a name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - LetsWear</title>
+
+    <environment include="Development">
+       <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
+              crossorigin="anonymous"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" />
+    </environment>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/custom.css" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+</head>
+<body>
+    <header>
+        <nav class="navbar nav-top navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                @*<button class="navbar-toggler ml-auto hidden-sm-up float-xs-right" type="button" data-toggle="collapse" data-target="#collapseble" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">*@
+
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse" id="collapseble">
+                    <ul class="navbar-nav flex-grow-1 nav-pills">
+                        @await Component.InvokeAsync("SexMenu")
+
+                    </ul>
+                </div>
+                @*<div class="collaps navbar-collapse d-sm-inline-flex flex-sm-row-reverse ">*@
+                <div class="collaps d-sm-inline-flex flex-sm-row-reverse ">
+                    <ul class="navbar-nav flex-grow-0 mt-auto">
+                        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                            <span id="companylogo"><img src="~/images/logo.png" /></span>
+                        </a>
+
+                    </ul>
+
+                </div>
+                @*<div class="collaps d-sm-inline-flex mt-auto">*@
+                <div class="navbar-collapse collapse d-sm-inline-flex mt-auto m-2" id="collapseble">
+                    <ul class="navbar-nav flex-grow-1 nav-pills navbar-right">
+                        @await Html.PartialAsync("LogInPartial")
+
+                        @await Component.InvokeAsync("ShoppingCartMenu")
+                    </ul>
+                    @*<ul class="navbar-nav ">
+                            @await Html.PartialAsync("LogInPartial")
+                        </ul>
+                        <ul class="navbar-nav">
+                            @await Component.InvokeAsync("ShoppingCartMenu")
+                        </ul>*@
+
+
+
+                </div>
+                <button class="navbar-toggler ml-auto collapsed float-xs-right" type="button" data-toggle="collapse" data-target="#collapseble" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+
+            <div class="container">
+                <button class="navbar-toggler collapsed ml-auto float-xs-right" type="button" data-toggle="collapse" data-target="#collapsebleC" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse" id="collapsebleC">
+                    <ul class="navbar-nav flex-grow-1 nav-pills">
+                        @await Component.InvokeAsync("CategoryMenu")
+                        <li class="nav-item">
+                            <a class="nav-link text-dark cus" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy |</a>
+                        </li>
+                        @if (signInManager.IsSignedIn(User) && User.IsInRole("Admin"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link font-weight-bold" asp-controller="Administration" asp-action="ListRoles">Manage Roles</a>
+                            </li>
+
+                        }
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <partial name="_CookieConsentPartial" />
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2019 - LetsWear - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <environment include="Development">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    </environment>
+    <environment exclude="Development">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o">
+
+        </script>
+    </environment>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,15 @@
+﻿@model SexMenuViewModel
+
+@foreach (var sex in Model.Sexs)
+{
+    var active = "";
+    if(sex.SexId == Model.CurrentSex)
+    {
+        active = "active";
+    }
+
+    <li class="nav-item @active">
+        <a class="nav-link" asp-area="" asp-controller="Cloth" asp-action="List" asp-route-sexid="@sex.SexId" asp-route-categoryid="@Model.CurrentCategory">@sex.SexGroup | </a>
+    </li>
+
+}

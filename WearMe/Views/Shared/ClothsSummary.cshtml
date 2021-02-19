@@ -1,0 +1,21 @@
+﻿@model Cloth
+
+@{ var photo = "~/Images/" + (@Model.ImageUrl ?? "Navy.jpg"); }
+
+    <div class="card img-fluid m-4" style="width:300px">
+
+        <a asp-controller="Cloth" asp-action="Details" asp-route-id="@Model.ClothId">
+
+        <img class="card-img-top cus imageThumbnail" src="@photo" asp-append-version="true" />
+        @*<div class="card-footer col-form-label-sm " >*@
+        <div class="card-footer card-img-overlay h-100 d-flex flex-column justify-content-end">
+            <small class="text-secondary font-weight-bold">
+                @Model.Name
+            </small>
+            <small class="font-weight-bold">
+                @Model.Price.ToString("c")
+            </small>
+        
+        </div>
+        </a>
+    </div>
