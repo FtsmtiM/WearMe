@@ -1,14 +1,19 @@
 ﻿@model  AccountViewModel
 
 <div class="row loginForm">
+    <div class="col-md-10">
+
+        <h5>Please login</h5>
+        <br /> 
+    </div>
     <div class="col-md-8 col-md-offset-2">
-        <h2>Please login</h2>
+        
         <form asp-controller="Account" asp-action="Login" method="post" class="form-horizontal" role="form">
-            <h4>Enter your details below</h4>
-            @*</hr></br>*@
+            <h6>Enter your details below</h6>
+            <br />
             <input type="hidden" asp-for="ReturnUrl" />
             <div class="form-group">
-                <label asp-for="UserName" class="col-md-2 control-label"></label>
+                <label asp-for="UserName" class="col-md-4 control-label"></label>
                 <div class="col-md-10">
                     <input asp-for="UserName" class="form-control" />
                     <span asp-validation-for="UserName" class="text-danger"></span>

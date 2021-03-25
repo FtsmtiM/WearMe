@@ -21,6 +21,7 @@ namespace WearMe.ViewModels
         public string Password { get; set; }
 
         [Required]
+        [DataType(DataType.Password)]
         [Display(Name ="Confirms Password")]
         [Compare("Password",ErrorMessage ="Password does not match")]
         public string ConfirmPassword { get; set; }
